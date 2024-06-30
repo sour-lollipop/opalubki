@@ -1,25 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
 
+import { Header } from "./Components/Header";
+import First_Screen from "./Components/FirstScreen";
+import Second_Screen from "./Components/SecondScreen";
+import Third_Screen from "./Components/ThirdScreen";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+       <Header />
+      <First_Screen/>
+      <Second_Screen/>
+      <Third_Screen/>
+      </div>
+    </>
   );
 }
 

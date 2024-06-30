@@ -1,0 +1,48 @@
+.first_screen{
+    height: 100vh;
+    background-image: url('../Images/contents/bgWeb.jpg');
+    background-size: cover; /* Ensure the background covers the entire section */
+    background-position: center; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 30px;
+    @media (max-width: 700px){
+        background-image: url('../Images/contents/bgMobile.jpg');
+        justify-content: center;
+        padding: 0;
+        text-align: center;
+    }
+    .content{
+        width: 73%;
+        color: #aaa9ad;
+        @media (max-width: 700px){
+            width: 90%;
+        }
+        h1{
+            font-size: 60px;
+            line-height: 110%;
+            @media (max-width: 700px){
+                text-align: center;
+            }
+        }
+        p{
+            font-size: 28px;
+            line-height: 110%;
+            @media (max-width: 700px){
+                text-align: center;
+            }
+        }
+    }
+    .buttons{
+        display: flex;
+        justify-content: space-around;
+        @media (max-width: 700px){
+            gap: 20px;
+            flex-direction: column;
+            padding: 17%;
+            padding-top: 0;
+        }
+        
+    }
+}

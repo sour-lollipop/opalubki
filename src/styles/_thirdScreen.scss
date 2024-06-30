@@ -1,0 +1,40 @@
+.third_Screen{
+  display: flex;
+  flex-direction: column;
+  
+.slanted-section {
+    position: relative;
+    // background-color: white; /* Цвет фона секции */
+    padding: 20px;
+    margin: 70px 0;
+  }
+
+  .slanted-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130px; /* Высота наклонной линии */
+    background-color: #f3c23c; /* Цвет линии */
+    transform: skewY(-5deg); /* Наклон линии */
+    transform-origin: top left;
+    z-index: 0; /* Разместить линию под содержимым */
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
+  }
+
+  h2 {
+    margin-top: -5px;
+    padding: 0px 0;
+    color: #444444;
+    font-size: 38px;
+    z-index: 1000;
+    @media (max-width: 700px){
+      text-align: center;
+    }
+  }
+}
