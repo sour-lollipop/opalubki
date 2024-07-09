@@ -17,7 +17,12 @@ const Accordion: React.FC<AccordionProps> = ({
   children,
 }) => {
   const [isActive, setIsActive] = useState(false);
-
+  const handleClick = () => {
+    const phoneNumber = '87072041208'; // замените на ваш номер телефона
+    const url = `https://wa.me/${phoneNumber}`;
+    const href = `https://wa.me/87072041208`;
+    window.open(url, '_blank');
+  };
   return (
     <div className="accordion-item">
       <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
@@ -41,7 +46,7 @@ const Accordion: React.FC<AccordionProps> = ({
               <div className="cont">
                 {" "}
                 <img src={image} alt="Accordion content" />
-                <div className="buttonv v1">ОСТАВИТЬ ЗАЯВКУ</div>
+                <div className="buttonv v1" onClick={handleClick}>ОСТАВИТЬ ЗАЯВКУ</div>
               </div>
             </>
           ) : (
@@ -49,7 +54,7 @@ const Accordion: React.FC<AccordionProps> = ({
               <div className="cont">
                 {" "}
                 <img src={image} alt="Accordion content" />
-                <div className="buttonv v1 ">ОСТАВИТЬ ЗАЯВКУ</div>
+                <div className="buttonv v1 " onClick={handleClick}>ОСТАВИТЬ ЗАЯВКУ</div>
               </div>
               <p>{content}</p>
             </>

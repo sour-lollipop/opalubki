@@ -27,7 +27,7 @@ import { title } from "process";
 
 export const Third_Screen = () => {
   return (
-    <div className="third_Screen" id="first">
+    <div className="third_Screen" id="third">
       <div className="slanted-section">
         <div className="content">
           <h2>

@@ -27,11 +27,11 @@ export const Header = () => {
           <a href="#first">ГЛАВНАЯ</a>
           <a href="#second">О НАС</a>
           <a href="#third">КАТАЛОГ</a>
-          <a href="#third">КОНТАКТЫ</a>
+          <a href="#first">КОНТАКТЫ</a>
         </div>
       ) : null}
       <div className="tel">
-        <a className="white">+7 701 267 7727 </a>
+        <a className="white" href="tel:+77072041208">+7 707 204 1208 </a>
       </div>
       {window.innerWidth < 700 ? (
         <GiHamburgerMenu

@@ -1,6 +1,12 @@
 import React from "react";
 
 export const First_Screen = () => {
+  const handleClick = () => {
+    const phoneNumber = '87072041208'; // замените на ваш номер телефона
+    const url = `https://wa.me/${phoneNumber}`;
+    const href = `https://wa.me/87072041208`;
+    window.open(url, '_blank');
+  };
   return (
     <div className="first_screen" id="first">
       <div className="content">
@@ -18,11 +24,11 @@ export const First_Screen = () => {
           СТРОИТЕЛЬНЫЕ, ДВУТАВРОВАЯ БАЛКА, МЕТАЛЛОПРОКАТ И АРМАТУРА В
           АССОРТИМЕНТЕ.
         </p>
-        <div className="buttons">
-            <div className="button v1">
+        <div className="buttons" >
+            <div className="button v1" onClick={handleClick}>
                 <a>ЦЕНЫ УЗНАТЬ</a>
             </div>
-            <div className="button v2">
+            <div className="button v2" onClick={handleClick}>
                 <a>КОНСУЛЬТАЦИЯ</a>
             </div>
         </div>

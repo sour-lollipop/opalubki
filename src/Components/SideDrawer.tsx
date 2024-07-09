@@ -25,7 +25,7 @@ const SideDrawer: React.FC<SideDrawerProps> = ({ show, closeDrawer }) => {
         <li><a href="#first" onClick={closeDrawer}>ГЛАВНАЯ</a></li>
         <li><a href="#second" onClick={closeDrawer}>О НАС</a></li>
         <li><a href="#third" onClick={closeDrawer}>КАТАЛОГ</a></li>
-        <li><a href="#third" onClick={closeDrawer}>КОНТАКТЫ</a></li>
+        <li><a href="#first" onClick={closeDrawer}>КОНТАКТЫ</a></li>
       </ul>
     </nav>
   );
