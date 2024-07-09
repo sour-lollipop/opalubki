@@ -76,6 +76,22 @@ body{
 .button{
     padding: 20px 80px;
     font-size: 18px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 .v1{
     background-color: rgba(243, 194, 60, 1);
