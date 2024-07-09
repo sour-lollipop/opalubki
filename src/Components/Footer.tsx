@@ -7,9 +7,9 @@ export const Footer = () => {
     <div className="footer" >
       {/* <img src={footer_L}/> */}
       <div className="footer_content">
-        <p className="footer_title">Наши контакты</p>
-        <div className="contact_content">
-          <a>+70000000000</a>
+        <p className="footer_title">Группа компаний «TOO OPALUBKOFF.KZ» 2023 © Аренда опалубки, продажа арматура в ассортименте, лес, струбцины, фанера, колонны в Алматы по выгодной цене </p>
+        <div className="devoleper_content">
+          <a href="t.me/Dossymkhanova_A">РАЗРАБОТКА САЙТА</a>
         </div>
       </div>
     </div>

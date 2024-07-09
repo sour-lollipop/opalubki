@@ -7,7 +7,7 @@
 @use '_firstScreen';
 @use '_secondScreen';
 @use '_thirdScreen';
-
+@use '_footer';
 // html {
 //     scroll-behavior: smooth;
 //   }
@@ -44,6 +44,12 @@ body{
     // background-color: rgb(235, 235, 235);
     background-color: #fdffff;
     font-family: 'Oswald';
+    @media (max-width: 700px){
+        align-items: center;
+         display: flex;
+    flex-direction: column;
+        
+          }
 }
 
 .App{
@@ -54,6 +60,9 @@ body{
 
     @media (max-width: 700px){
     align-items: center;
+    margin: 0;
+    padding: 0;
+    
       }
 }
 
