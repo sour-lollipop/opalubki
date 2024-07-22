@@ -7,6 +7,8 @@ import First_Screen from "./Components/FirstScreen";
 import Second_Screen from "./Components/SecondScreen";
 import Third_Screen from "./Components/ThirdScreen";
 import Footer from "./Components/Footer";
+import './styles/index.scss';
+
 function App() {
   const handleClick = () => {
     const phoneNumber = '87072041208'; // замените на ваш номер телефона
